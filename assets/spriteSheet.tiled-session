@@ -1,0 +1,88 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "Level_1.tmj",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "file.lastUsedOpenFilter": "All Files (*)",
+    "fileStates": {
+        "": {
+            "scaleInDock": 2,
+            "scaleInEditor": 1
+        },
+        "#Platform": {
+            "scaleInDock": 1
+        },
+        "#gem": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "#platform and gems": {
+            "scaleInDock": 1
+        },
+        "#tilemap-backgrounds": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Ahern/OneDrive/Desktop/UCSC/Spring 2025/CMPM 120 Game Development Experiance/CMPM 120 Git Folder/S7_Platformers/PlatformImprovement/assets/platformer-level-1.tmj": {
+            "scale": 1.726273148148148,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 431.8551793496481,
+                "y": 225.0512906469997
+            }
+        },
+        "C:/Users/Ahern/OneDrive/Desktop/UCSC/Spring 2025/CMPM 120 Game Development Experiance/CMPM 120 Git Folder/S7_Platformers/PlatformImprovement/assets/platformer-level-1.tmj#kenny_tilemap_packed": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Ahern/OneDrive/Desktop/UCSC/Spring 2025/CMPM 120 Game Development Experiance/CMPM 120 Git Folder/S7_Platformers/PlatformImprovement/assets/platformer-level-1.tmx": {
+            "scale": 1.726273148148148,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 432.434461951056,
+                "y": 225.0512906469997
+            }
+        },
+        "C:/Users/Ahern/OneDrive/Desktop/UCSC/Spring 2025/CMPM 120 Game Development Experiance/CMPM 120 Git Folder/S7_Platformers/PlatformImprovement/assets/platformer-level-1.tmx#kenny_tilemap_packed": {
+            "scaleInDock": 1
+        },
+        "Level_1.tmj": {
+            "scale": 2,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 1161.75,
+                "y": 305.75
+            }
+        },
+        "Level_1.tmj#kenny_tilemap_packed": {
+            "scaleInDock": 1
+        },
+        "Level_1.tmj#platform": {
+            "scaleInDock": 1.5
+        }
+    },
+    "last.exportedFilePath": "C:/Users/Ahern/OneDrive/Desktop/UCSC/Spring 2025/CMPM 120 Game Development Experiance/CMPM 120 Git Folder/S7_Platformers/PlatformImprovement/assets",
+    "last.imagePath": "C:/Users/Ahern/OneDrive/Desktop/UCSC/Spring 2025/CMPM 120 Game Development Experiance/CMPM 120 Git Folder/Game 3(a)_Platformer/assets",
+    "map.height": 24,
+    "map.lastUsedExportFilter": "JSON map files (*.tmj *.json)",
+    "map.lastUsedFormat": "json",
+    "map.tileHeight": 18,
+    "map.tileWidth": 18,
+    "map.width": 80,
+    "openFiles": [
+        "Level_1.tmj"
+    ],
+    "project": "spriteSheet.tiled-project",
+    "recentFiles": [
+        "Level_1.tmj",
+        "C:/Users/Ahern/OneDrive/Desktop/UCSC/Spring 2025/CMPM 120 Game Development Experiance/CMPM 120 Git Folder/S7_Platformers/PlatformImprovement/assets/platformer-level-1.tmx",
+        "C:/Users/Ahern/OneDrive/Desktop/UCSC/Spring 2025/CMPM 120 Game Development Experiance/CMPM 120 Git Folder/S7_Platformers/PlatformImprovement/assets/platformer-level-1.tmj"
+    ],
+    "tileset.embedInMap": true,
+    "tileset.tileSize": {
+        "height": 25,
+        "width": 25
+    }
+}
