@@ -1,4 +1,4 @@
-**Game 3 Platformer**
+**Game 4 Platformer**
 
 Movement controls are
 {

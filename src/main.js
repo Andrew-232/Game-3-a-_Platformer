@@ -13,7 +13,7 @@ let config = {
     physics: {
         default: 'arcade',
         arcade: {
-            debug: false,
+            debug: true,
             gravity: {
                 x: 0,
                 y: 0
@@ -29,7 +29,7 @@ let config = {
         forceSetTimeOut: true,
         target: 60
     },
-    scene: [MainMenuScene, ControlsScene, Load, Platformer, PauseScene, EndScreenScene]
+    scene: [MainMenuScene, ControlsScene, Load, Level1,, Level2, Level3, PauseScene, EndScreenScene]
 }
 
 var cursors;

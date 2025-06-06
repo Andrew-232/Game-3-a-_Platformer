@@ -20,10 +20,11 @@ class ControlsScene extends Phaser.Scene {
         }).setOrigin(0.5);
 
         const controlsInfo = [
-            "Up Arrow   :  Jump",
-            "Left Arrow :  Move Left",
+            "Up Arrow:  Jump",
+            "Left Arrow:  Move Left",
             "Right Arrow:  Move Right",
-            "Tab Key    :  Pause Game"
+            "Tab Key:  Pause Game",
+            "Space Key:  Shoot"
         ];
 
         controlsInfo.forEach((text, index) => {

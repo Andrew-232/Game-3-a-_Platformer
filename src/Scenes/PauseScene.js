@@ -5,7 +5,7 @@ class PauseScene extends Phaser.Scene {
     }
 
     create(data) {
-        this.platformerSceneKey = data.platformerSceneKey || 'platformerScene'; 
+        this.Level1SceneKey = data.Level1SceneKey || 'Level1Scene'; 
 
         this.add.rectangle(0, 0, this.cameras.main.width, this.cameras.main.height, 0x000000, 0.65)
             .setOrigin(0, 0)
@@ -40,7 +40,7 @@ class PauseScene extends Phaser.Scene {
         continueButton.on('pointerover', () => continueButton.setStyle({ fill: '#27ae60' }));
         continueButton.on('pointerout', () => continueButton.setStyle({ fill: '#2ecc71' }));
         continueButton.on('pointerdown', () => {
-            this.scene.resume(this.platformerSceneKey); 
+            this.scene.resume(this.Level1SceneKey); 
             this.scene.stop(); 
         });
 
@@ -61,7 +61,7 @@ class PauseScene extends Phaser.Scene {
         quitButton.on('pointerover', () => quitButton.setStyle({ fill: '#c0392b' }));
         quitButton.on('pointerout', () => quitButton.setStyle({ fill: '#e74c3c' }));
         quitButton.on('pointerdown', () => {
-            this.scene.stop(this.platformerSceneKey); 
+            this.scene.stop(this.Level1SceneKey); 
             this.scene.stop(); 
             this.scene.start('MainMenuScene');
         });

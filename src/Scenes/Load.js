@@ -7,26 +7,34 @@ class Load extends Phaser.Scene {
     preload() {
         this.load.setPath("./assets/");
 
-        // Load characters spritesheet
+        // Loads characters spritesheet
         this.load.atlas("platformer_characters", "tilemap-characters-packed.png", "tilemap-characters-packed.json");
 
-        // Load tilemap information
+        // Loads tilemap information
         this.load.spritesheet("tilemap_tiles", "tilemap_packed.png", {
             frameWidth: 18,
             frameHeight: 18
         });
+
+        this.load.spritesheet("tilemap_tiles_background", "tilemap-backgrounds_packed.png", {
+            frameWidth: 16,
+            frameHeight: 16
+        });
+
         this.load.tilemapTiledJSON("Level_1", "Level_1.tmj");
+        this.load.tilemapTiledJSON("Level_2", "Level_2.tmj");
+        this.load.tilemapTiledJSON("Level_3", "Level_3.tmj");
 
         this.load.multiatlas("kenny-particles", "kenny-particles.json");
 
-        // Load audio assets
+        // Loads audio assets
         this.load.audio('sfx_walk', 'MovementAudio.mp3');
         this.load.audio('sfx_gem_collect', 'GemAudio.mp3');
         this.load.audio('sfx_jump', 'woosh-2-6471.mp3');
     }
 
     create() {
-        // Walk animation
+        // Player Walk animation
         this.anims.create({
             key: 'walk',
             frames: this.anims.generateFrameNames('platformer_characters', {
@@ -40,7 +48,7 @@ class Load extends Phaser.Scene {
             repeat: -1
         });
 
-        // Idle animation
+        // Player Idle animation
         this.anims.create({
             key: 'idle',
             defaultTextureKey: "platformer_characters",
@@ -55,7 +63,7 @@ class Load extends Phaser.Scene {
             repeat: -1
         });
 
-        // Jump animation
+        // Player Jump animation
         this.anims.create({
             key: 'jump',
             defaultTextureKey: "platformer_characters",
@@ -63,7 +71,21 @@ class Load extends Phaser.Scene {
                 { frame: "tile_0026.png" } 
             ],
         });
-        this.scene.start("platformerScene");
+
+        // ENEMY ANIMATION
+        this.anims.create({
+            key: 'enemy_idle',
+            frames: this.anims.generateFrameNames('platformer_characters', {
+                prefix: "tile_",
+                frames: ["0015", "0016", "0017"],
+                suffix: ".png",
+                zeroPad: 4
+            }),
+            frameRate: 4, 
+            repeat: -1    
+        });
+
+        this.scene.start("Level1Scene");
     }
 
     update() {
